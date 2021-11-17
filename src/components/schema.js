@@ -6,8 +6,8 @@ const loginSchema = Yup.object().shape({
 })
 
 const signupSchema = Yup.object().shape({
-    username: Yup.string().trim().required('You need to create a username').min(3,'minimum 3 characters').max(30,'max, 30 characters'),
-    password: Yup.string().trim().required('You need to assign a password').min(5,'minimum 5 characters').max(200,'max, 200 characters'),
+    username: Yup.string().trim().required('You need to create a username').min(5,'minimum 5 characters').max(36,'max, 36 characters'),
+    password: Yup.string().trim().required('You need to assign a password').min(5,'minimum 5 characters').max(36,'max, 36 characters'),
 })
 
 export default signupSchema;
