@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# African Marketpkace 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This build week project takes inspiration from the organization, Sauti Africa. Sauti Africa empowers small business owners, particularly women, to improve their business and economic opportunities to grow out of poverty. 
 
-## Available Scripts
 
-In the project directory, you can run:
+# Proposal:
 
-### `npm start`
+What problem does your app solve?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Providing small business owners (particularly women) access to an online platform where they can trade their goods. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Be as specific as possible; how does your app solve the problem?
 
-### `npm test`
+Business owners can create an account on the site and login to see the current goods listed on the platform and their prices, divided by category.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users can also list their own items on the platform for their respective market locations by providing the name, description and price. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+What is the mission statement?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+“To address information barriers in low technology environments through scalable and sustainable technology and research solutions.”
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Features: 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+What features are required for your minimum viable product?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+User can signup and login
+Logged in users can view currently listed items, divided by category. Each listed time has a name, price and description.
+Users can list their own items to sell by selecting the category and providing a name, price and description.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+What features may you wish to put in a future release?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ability to add images for listed items. 
+Ability to delete/edit listed items. 
+Users can provide additional data for their businesses. 
+Sort functionality for listed items (e.g. Best Selling or High-to-Low Price) 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+What 3rd party frameworks/libraries are you considering using?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Reactstrap/Styled-Components for styling
+Axios - api calls
+Yup for form validation. 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Target Audience:
 
-### Analyzing the Bundle Size
+Who is your target audience?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Small to medium business owners (mainly women-owned) across East Africa that have limited or no access to local market information and are operating in “low tech” environments. 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
