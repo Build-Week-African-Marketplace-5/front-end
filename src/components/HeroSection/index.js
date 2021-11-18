@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <HeroH1>Technology Made Easy for Women</HeroH1>
                 <HeroP>
                     Sign up for a new account today and 
-                    display your PRODUCTS FOR SALE!!!
+                    display your PRODUCTS FOR SALE
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 
