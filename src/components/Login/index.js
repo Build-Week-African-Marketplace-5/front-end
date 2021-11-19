@@ -28,8 +28,11 @@ const LogInPage = (props) => {
         .then(resp=>{
           console.log(resp.data.message);
           localStorage.setItem('token',resp.data.token);
+          localStorage.setItem('message',resp.data.message);
           console.log(resp.data.token);
-          history.push('/items')
+          history.push('/')
+          window.location.reload(true);
+         
         })
         .catch((err) => {
           console.log(err);

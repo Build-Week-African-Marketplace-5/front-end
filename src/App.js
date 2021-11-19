@@ -7,11 +7,17 @@ import { useState, useEffect} from 'react';
 import AddItem from './components/AddItem';
 import schema from './validation/formSchema';
 import * as yup from 'yup';
-import ItemPage from './components/ItemPage';
+import ItemPage from './components/ItemPage';  
 import PrivateRoute from './PrivateRoute';
 import TotalItems from './components/TotalItems';
 
 let isLoggedIn = localStorage.getItem("token");
+
+console.log((isLoggedIn ? 'Yes Logged In' : 'Not Logged In'));
+
+
+
+
 
 const initialFormValues = {
   username: '',

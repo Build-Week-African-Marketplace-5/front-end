@@ -2,10 +2,30 @@ import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBarElements';
 import { animateScroll as scroll } from 'react-scroll';
+import { useHistory } from "react-router-dom";
+
+let isLoggedIn = localStorage.getItem("token");
+
+
 
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
+
+    const { push } = useHistory();
+
+    const handleLogout = () => {
+
+        localStorage.removeItem("token");
+        localStorage.removeItem("message");
+
+        push("/");
+        window.location.reload(true);
+       
+    
+        
+    
+    }
 
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -34,7 +54,7 @@ const Navbar = ({toggle}) => {
                     <NavMenu>
                         <NavItem>
                             <NavLinks 
-                            to="about"
+                            to="#"
                             smooth={true} 
                             duration={500} 
                             spy={true} 
@@ -44,7 +64,7 @@ const Navbar = ({toggle}) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks 
-                            to="services"
+                            to="#"
                             smooth={true} 
                             duration={500} 
                             spy={true} 
@@ -52,9 +72,10 @@ const Navbar = ({toggle}) => {
                             offset={-80}
                             >Services</NavLinks>
                         </NavItem>
+                        {isLoggedIn &&
                         <NavItem>
                         <NavLinks 
-                            to="products"
+                            to="/allitems"
                             smooth={true} 
                             duration={500} 
                             spy={true} 
@@ -62,13 +83,17 @@ const Navbar = ({toggle}) => {
                             offset={-80}
                         >Products</NavLinks>
                         </NavItem>
-                        
+                        }
                     </NavMenu>
+                    {isLoggedIn ?
+                    <NavBtn>
+                        <NavBtnLink onClick={handleLogout}>Logout</NavBtnLink>
+                    </NavBtn> :
                     <NavBtn>
                         <NavBtnLink to="/login">Login</NavBtnLink>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <NavBtnLink to="/signup">Signup</NavBtnLink>
-                    </NavBtn>
+                    
+                </NavBtn>}
+
                 </NavbarContainer>
             </Nav>
         </>
