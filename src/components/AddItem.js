@@ -9,6 +9,7 @@ const initialFormValues = {
     name: '',
     price: '',
     description: '',
+    location: ''
 }
 const initialFormErrors = {
     name: '',
@@ -50,6 +51,7 @@ export default function AddItem() {
     setFormValues({ ...formValues, [name]: value });
   };
 
+
   const formSubmit = (e) => {
     e.preventDefault();
       const newItemListing = {
@@ -57,13 +59,16 @@ export default function AddItem() {
         item_price: Number(formValues.price.trim()),
         item_description: formValues.description.trim(),
       }
+
+      console.log(formValues.location);
         axios
-          .post('https://african-marketplace-buildweek.herokuapp.com/api/locations/1/item', newItemListing)
+          .post(`https://african-marketplace-buildweek.herokuapp.com/api/locations/${formValues.location}/item`, newItemListing)
           .then((res) => {
             setListing([...listing, res.data,])
             push('/items')
             setFormValues(initialFormValues);
             console.log(newItemListing)
+
           }).catch((err) => {
             console.error(err);
             console.log(newItemListing);

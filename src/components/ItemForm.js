@@ -14,6 +14,21 @@ export default function ItemForm(props) {
             <div>
                 <h2>List an Item to Sell</h2>
             </div>
+
+            <label>Select Location:
+                    <select
+                        value={values.location} 
+                        onChange={onChange} 
+                        name='location'
+                    >
+                        <option value=''>- Select a Location -</option>
+                        <option value='1'>Lagos</option>
+                        <option value='2'>Addis Ababa</option>
+                        <option value='3'>Nairobi</option>
+                        <option value='4'>Kinshasa</option>
+                        <option value='5'>Cape Town</option>
+                    </select>
+                </label>
             <div className='errors'>
                 <div>{errors.name}</div>
                 <div>{errors.price}</div>

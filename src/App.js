@@ -9,6 +9,7 @@ import schema from './validation/formSchema';
 import * as yup from 'yup';
 import ItemPage from './components/ItemPage';
 import PrivateRoute from './PrivateRoute';
+import TotalItems from './components/TotalItems';
 
 let isLoggedIn = localStorage.getItem("token");
 
@@ -68,6 +69,7 @@ function App() {
         </Route>
 
         <PrivateRoute path='/items' component={ItemPage} exact/>
+        <PrivateRoute path='/allitems' component={TotalItems} exact/>
         <Route path='/additem' exact>
           <AddItem/>
         </Route>
