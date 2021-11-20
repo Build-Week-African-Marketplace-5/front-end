@@ -4,4 +4,95 @@
   padding:0;
   font-family: 'Encode Sans Expanded', sans-serif;
 
+
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  line-height: 4;
+  text-align: center;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  line-height: 4;
+  text-align: center;
+}
+
+
+
+.additem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  line-height: 4;
+  text-align: center;
+}
+
+.signup-button {
+  border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.signup-button:disabled {
+  border-radius: 50px;
+    background: gray;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+#formH2 {
+  color: #01bf71;
+
+}
+
+#submit-listing-button {
+  border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+#submit-listing-button:disabled {
+  border-radius: 50px;
+    background: gray;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }

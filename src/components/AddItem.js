@@ -83,7 +83,7 @@ export default function AddItem() {
   }, [formValues])
 
   return(
-
+    <div className="additem">
     <ItemForm
     values={formValues}
     change={inputChange}
@@ -92,6 +92,7 @@ export default function AddItem() {
     errors={formErrors}
     setFormValues={setFormValues}
     />
+    </div>
 
   )
   }

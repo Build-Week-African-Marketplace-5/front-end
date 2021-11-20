@@ -2,6 +2,8 @@ import React,{useState} from "react";
 import axios from 'axios'
 import { useHistory } from "react-router";
 import { Link } from 'react-router-dom'
+import { NavBtnLink, NavBtn } from "../Navbar/NavBarElements";
+
 
 
 const LogInPage = (props) => {
@@ -80,15 +82,22 @@ const LogInPage = (props) => {
               </div>
               <div className="login-button-div">
     
+
                 <div className="login-button-container">
-                  <button 
+           
+                  <NavBtnLink 
                     className="login-button"
                     onClick={onSubmit}
                     id='signup-button'>
                     Log In
-                  </button>
+                  </NavBtnLink>
+
+                  <div></div>
+            
+
+        
                   <Link to="/signup" className="create-login">
-                    <h3>Create Account</h3>
+                    <NavBtnLink to="/signup">Create Account</NavBtnLink>
                   </Link>
                 </div>
               </div>

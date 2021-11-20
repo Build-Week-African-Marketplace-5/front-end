@@ -10,13 +10,14 @@ export default function ItemForm(props) {
     }
 
     return(
+        <div>
         <form onSubmit={submit}>
             <div>
-                <h2>List an Item to Sell</h2>
+                <h2 id="formH2">List an Item to Sell</h2>
             </div>
 
             <label>Select Location:
-                    <select
+                    <select required
                         value={values.location} 
                         onChange={onChange} 
                         name='location'
@@ -35,7 +36,7 @@ export default function ItemForm(props) {
                 <div>{errors.description}</div>
             </div>
             <div className='new-item'>
-                <label> Item Name:
+                <label>Name:
                     <input
                         value= {values.name}
                         onChange={onChange}
@@ -44,7 +45,7 @@ export default function ItemForm(props) {
                     />
                 </label>
                 <br/>
-                <label> Price:
+                <label>Price:
                     <input
                         value= {values.price}
                         onChange={onChange}
@@ -53,7 +54,7 @@ export default function ItemForm(props) {
                     />
                 </label>
                 <br/>
-                <label>Item Description:
+                <label>Description (10 characters min):
                 <input
                     value={values.description} 
                     onChange={onChange} 
@@ -68,6 +69,7 @@ export default function ItemForm(props) {
                 disabled={disabled}> Save Listing
             </button>
         </form>
+        </div>
        
     )
 }

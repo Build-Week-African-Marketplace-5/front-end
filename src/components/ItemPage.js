@@ -64,6 +64,11 @@ const ItemPage = () => {
         <NavBtnLink to="/additem">Add New Item</NavBtnLink>
       </Selector>
 
+      <Selector>
+
+<NavBtnLink to="/allitems">View All Items</NavBtnLink>
+</Selector>
+
       <FooterDiv>
         <Footer />
       </FooterDiv>
